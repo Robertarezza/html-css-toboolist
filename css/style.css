@@ -21,3 +21,8 @@
     background-color: #14aaf5;
     color: white;
 }
+ol,ul{
+    text-align: left;
+    margin-left: 20px;
+    list-style-type: none;
+}

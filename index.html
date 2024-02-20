@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Toboolist</title>
 </head>
+
 <body>
     <!-- header -->
     <header class="logo">
-    <img src="./img/logo.png" alt="">
+        <img src="./img/logo.png" alt="">
     </header>
     <!-- /header -->
 
     <!-- main -->
     <main>
         <div class="contenitore">
-<div>
-    <input class="barra" type="text" placeholder="es: Fare la spesa...">
-    <button class="bottone">Add Task</button>
-</div>
+            <!-- barra di ricerca -->
+            <div>
+                <input class="barra" type="text" placeholder="es: Fare la spesa...">
+                <button class="bottone">Add Task</button>
+            </div>
+            <!-- inserimento lista -->
+            <div>
+                <ol>
+                    <li>
+                        <span>&#10148; TASK PRECEDENTI</span>
+                        <ul>
+                            <li>&check; Quarterly Newsletter <span>Editorial</span></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>&#10148; Oggi</span>
+                        <ul>
+                            <li>&check; Recriuting blog post <span>Editorial</span></li>
+                            <li>&check; Mobile app luaunch <span>Q1 Goals</span></li>
+                            <li>&Cross;; Interview Jhon H. <span>Recruiting</span></li>
+                            <li>&check; Summit update to mobile storefronts <span>Mobile</span></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>&#10148; PROSSIMI GIORNI</span>
+                        <ul>
+                            <li>&Cross; Shedule meeting with Alex</li>
+                            <li>&check; Homepage refresh <span>Website</span></li>
+                            <li>&check; Onboard new Sales team members <span>Sales</span></li>
+                            <li>&check; Review editorial calendar <span>Editorial</span></li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
 
         </div>
     </main>
     <!-- /main -->
 </body>
+
 </html>
