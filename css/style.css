@@ -2,6 +2,7 @@
     padding: 0;
     box-sizing: border-box;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .logo{
     background-color: #edf2f7;
@@ -21,8 +22,37 @@
     background-color: #14aaf5;
     color: white;
 }
+
+hr{
+    border: 2px solid white;
+}
+
+/* lista */
+ol{
+    margin-top: 20px;
+}
 ol,ul{
     text-align: left;
     margin-left: 20px;
     list-style-type: none;
 }
+.textline{
+    text-decoration: line-through;
+}
+
+ul>li{
+    background-color: white;
+    border-radius: 10px;
+    width: 95%;
+    border: 3px solid white;
+    margin-bottom: 7px;
+}
+
+.decorazione-e{
+    text-decoration: line-through black;
+    background-color: #14aaf5;
+    border-radius: 15px;
+    padding: 5px 10px;
+    color: white;
+}
+
