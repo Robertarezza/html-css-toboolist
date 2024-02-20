@@ -3,3 +3,21 @@
     box-sizing: border-box;
     margin: 0;
 }
+.logo{
+    background-color: #edf2f7;
+    text-align: center;
+}
+.contenitore{
+    width: 80%;
+    background-color: #edf2f7;
+    margin:20px auto;
+    text-align: center;
+}
+
+.barra{
+    margin:20px 0;
+}
+.bottone{
+    background-color: #14aaf5;
+    color: white;
+}
