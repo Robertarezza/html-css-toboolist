@@ -21,6 +21,9 @@
 .bottone{
     background-color: #14aaf5;
     color: white;
+    border-radius: 2px;
+    border: 0;
+    padding: 2px 5px;
 }
 
 hr{
@@ -50,9 +53,48 @@ ul>li{
 
 .decorazione-e{
     text-decoration: line-through black;
-    background-color: #14aaf5;
     border-radius: 15px;
     padding: 5px 10px;
     color: white;
+    background-color: #14aaf5;
+}
+
+.q1{
+    text-decoration: line-through black;
+    background-color: violet;
+    border-radius: 15px;
+    padding: 5px 10px;
+    color: white;  
+}
+
+.rec{
+    text-decoration: line-through black;
+    background-color: 	#0efdc8;
+    border-radius: 15px;
+    padding: 5px 10px;
+    color: white; 
+}
+
+.mobile{
+    text-decoration: line-through black;
+    background-color: orange;
+    border-radius: 15px;
+    padding: 5px 10px;
+    color: white;  
+}
+.web{
+    text-decoration: line-through black;
+    background-color: rgb(221, 65, 65);
+    border-radius: 15px;
+    padding: 5px 10px;
+    color: white;  
+} 
+
+.sales{
+    text-decoration: line-through black;
+    background-color: green;
+    border-radius: 15px;
+    padding: 5px 10px;
+    color: white;  
 }
 
