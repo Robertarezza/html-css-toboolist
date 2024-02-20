@@ -13,6 +13,7 @@
     background-color: #edf2f7;
     margin:20px auto;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .barra{
@@ -98,3 +99,20 @@ ul>li{
     color: white;  
 }
 
+.cerchio{
+    background-color: white;
+    border-radius: 50%;
+    color: green;
+    border: 2px solid green;
+    padding: 1px 2px;
+    font-size: 12px;
+}
+
+.cross{
+    background-color: white;
+    border-radius: 50%;
+    color: red;
+    border: 2px solid red;
+    padding: 1px 2px;
+    font-size: 12px;
+}
