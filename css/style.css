@@ -1,32 +1,30 @@
+/* RESET */
 *{
     padding: 0;
     box-sizing: border-box;
     margin: 0;
+}
+/* common (cose in comune) */
+body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* header */
 .logo{
     background-color: #edf2f7;
     text-align: center;
-   box-shadow: 10px 10px 5px #dedede;
+    box-shadow: 10px 10px 5px #dedede;
+    padding: 10px 0;
 }
+
+/* main */
 .contenitore{
     width: 80%;
     background-color: #edf2f7;
-    margin:20px auto;
+    margin: 40px auto;
     text-align: center;
     padding-bottom: 20px;
     box-shadow: 10px 10px 5px #dedede;
-}
-
-.barra{
-    margin:20px 0;
-}
-.bottone{
-    background-color: #14aaf5;
-    color: white;
-    border-radius: 2px;
-    border: 0;
-    padding: 2px 5px;
 }
 
 hr{
@@ -34,8 +32,23 @@ hr{
 }
 
 /* lista */
+.barra,.bottone{
+    padding: 2px 5px;
+    border-radius: 2px;
+    border: 0;
+}
+
+.barra{
+    margin:20px 0;  
+    
+}
+.bottone{
+    background-color: #14aaf5;
+    color: white;
+}
+
 ol{
-    margin-top: 20px;
+    padding: 25px 0;
 }
 ol,ul{
     text-align: left;
@@ -46,75 +59,70 @@ ol,ul{
     text-decoration: line-through;
 }
 
+ol>li{
+    margin-bottom: 15px;
+}
+
+li>h4{
+    margin-bottom: 12px;
+}
 ul>li{
     background-color: white;
     border-radius: 10px;
     width: 95%;
     border: 3px solid white;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
+    padding: 7px 0;
 }
 
-.decorazione-e{
+
+.tag{
     text-decoration: line-through black;
     border-radius: 15px;
     padding: 5px 10px;
     color: white;
+    display: inline-block;
+}
+.decorazione-e{
     background-color: #14aaf5;
 }
 
 .q1{
-    text-decoration: line-through black;
     background-color: violet;
-    border-radius: 15px;
-    padding: 5px 10px;
-    color: white;  
 }
 
 .rec{
-    text-decoration: line-through black;
     background-color: 	#0efdc8;
-    border-radius: 15px;
-    padding: 5px 10px;
-    color: white; 
 }
 
 .mobile{
-    text-decoration: line-through black;
     background-color: orange;
-    border-radius: 15px;
-    padding: 5px 10px;
-    color: white;  
 }
 .web{
-    text-decoration: line-through black;
     background-color: rgb(221, 65, 65);
-    border-radius: 15px;
-    padding: 5px 10px;
-    color: white;  
 } 
 
 .sales{
-    text-decoration: line-through black;
     background-color: green;
-    border-radius: 15px;
-    padding: 5px 10px;
-    color: white;  
 }
 
-.cerchio{
-    background-color: white;
+/* formattazione simbolo */
+
+.cross, .cerchio{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
     border-radius: 50%;
+    background-color: white;
+}
+.cerchio{
     color: green;
     border: 2px solid green;
-    padding: 1px 2px;
-    font-size: 12px;
 }
 
 .cross{
-    background-color: white;
-    border-radius: 50%;
     color: red;
-    border: 2px solid red;
-    padding: 1px 2px;
-    font-size: 12px;
+    border: 2px solid red;  
 }
