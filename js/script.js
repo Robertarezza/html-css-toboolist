@@ -1,4 +1,4 @@
-const {createApp} = Vue
+const {createApp} = Vue;
 
 createApp ( {
 data() {
@@ -53,8 +53,14 @@ methods: {
             this.todoList.push({...this.newTodo})
             this.newTodo.text="",
             this.newTodo.done="";
-       
-               
+          
             },
+            inverDone: function(index) {
+
+                console.log(index);
+                this.todoList[index].done = !this.todoList[index].done;
+            
+            }       
+    
 }
   }).mount("#app")
