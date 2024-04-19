@@ -35,19 +35,14 @@
                 <div>
                     <ol>
                         <li>
-                            <h4>&#10148; TASK PRECEDENTI</h4>
+                            <!-- <h4>&#10148; TASK PRECEDENTI</h4> -->
                             <ul>
-                                <li>
-                                    <span class="cerchio">&check;</span> <span class="textline">Quarterly
-                                        Newsletter</span>
-                                    <span class="tag decorazione-e">Editorial</span>
+                                <li v-for="curTodo in todoList">
+                                    <!-- <span class="cerchio">&check;</span>  -->
+                                    <span>{{curTodo.text }}</span>
+                                    <!-- <span class="tag decorazione-e">Editorial</span> -->
                                 </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h4>&#10148; OGGI </h4>
-                            <ul>
-                                <li>
+                                <!-- <li>
                                     <span class="cerchio">&check;</span>
                                     <span class="textline"> Recriuting blog post</span>
                                     <span class="tag decorazione-e">Editorial</span>
@@ -58,7 +53,8 @@
                                     <span class="tag q1">Q1 Goals</span>
                                 </li>
                                 <li>
-                                    <span class="cross">&Cross;</span> Interview Jhon H.
+                                    <span class="cross">&Cross;</span>
+                                    <span>Interview Jhon H.</span> 
                                     <span class="tag rec">Recruting</span>
                                 </li>
                                 <li>
@@ -66,13 +62,9 @@
                                     <span class="textline"> Summit update to mobile storefronts</span>
                                     <spAan class="tag mobile">Mobile</span>
                                 </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h4>&#10148; PROSSIMI GIORNI</h4>
-                            <ul>
                                 <li>
-                                    <span class="cross">&Cross;</span> Shedule meeting with Alex
+                                    <span class="cross">&Cross;</span> 
+                                    <span>Shedule meeting with Alex</span>
                                 </li>
                                 <li>
                                     <span class="cerchio">&check;</span>
@@ -88,9 +80,21 @@
                                     <span class="cerchio">&check;</span>
                                     <span class="textline">Review editorial calendar </span>
                                     <span class="tag decorazione-e">Editorial</span>
-                                </li>
+                                </li> -->
                             </ul>
                         </li>
+                        <!-- <li> -->
+                        <!-- <h4>&#10148; OGGI </h4> -->
+                        <!-- <ul>
+                                
+                            </ul>
+                        </li>
+                        <li> -->
+                        <!-- <h4>&#10148; PROSSIMI GIORNI</h4> -->
+                        <!-- <ul>
+                               
+                            </ul>
+                        </li> -->
                     </ol>
                 </div>
 
@@ -98,6 +102,7 @@
         </div>
     </main>
     <!-- /main -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

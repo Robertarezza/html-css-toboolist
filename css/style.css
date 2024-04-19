@@ -77,7 +77,7 @@ ul>li{
 
 
 .tag{
-    text-decoration: line-through black;
+    /* text-decoration: line-through black; */
     border-radius: 15px;
     padding: 5px 10px;
     color: white;
