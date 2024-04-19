@@ -12,3 +12,7 @@
 # MILESTONE 2
 - [x] Predisporre un campo di input testuale e un pulsante "aggiungi": 
 - [x] cliccando sul pulsante, il testo digitato viene letto e utilizzato per creare un nuovo todo, che quindi viene aggiunto alla lista dei todo esistenti.
+
+## Bonus:
+
+1. [x] oltre al click sul pulsante, intercettare anche il tasto ENTER per aggiungere il todo alla lista (cercate nella documentazione l'evento che vi serve per questo bonus)

@@ -27,7 +27,7 @@
             <div class="contenitore">
                 <!-- barra di ricerca -->
                 <div>
-                    <input class="barra" type="text" v-model="newTodo.text" placeholder="es: Fare la spesa..." >
+                    <input class="barra" type="text" v-model="newTodo.text" @keypress.enter="addTodo" placeholder="es: Fare la spesa..." >
                     <button class="bottone" @click="addTodo">Aggiungi</button>
                 </div>
                 <hr>
