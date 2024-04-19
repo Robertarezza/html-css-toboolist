@@ -27,8 +27,8 @@
             <div class="contenitore">
                 <!-- barra di ricerca -->
                 <div>
-                    <input class="barra" type="text" placeholder="es: Fare la spesa...">
-                    <button class="bottone">Add Task</button>
+                    <input class="barra" type="text" v-model="newTodo.text" placeholder="es: Fare la spesa..." >
+                    <button class="bottone" @click="addTodo">Aggiungi</button>
                 </div>
                 <hr>
                 <!-- inserimento lista -->

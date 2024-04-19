@@ -3,6 +3,10 @@ const {createApp} = Vue
 createApp ( {
 data() {
      return {
+        newTodo: {
+            text:"",
+            done:"",
+        },
 todoList: [
      {
         text: "Quarterly Newsletter",
@@ -43,5 +47,14 @@ todoList: [
    
    },
 methods: {
+    addTodo: function() {
+        console.log("addTodo");
+      
+            this.todoList.push({...this.newTodo})
+            this.newTodo.text="",
+            this.newTodo.done="";
+       
+               
+            },
 }
   }).mount("#app")
