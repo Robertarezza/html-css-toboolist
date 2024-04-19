@@ -10,7 +10,7 @@ todoList: [
     },
     {
         text: "Mobile app luaunch",
-        done: true,
+        done: false,
     },
      {
         text: "Interview Jhon H",

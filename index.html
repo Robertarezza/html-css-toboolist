@@ -37,7 +37,7 @@
                         <li>
                             <!-- <h4>&#10148; TASK PRECEDENTI</h4> -->
                             <ul>
-                                <li v-for="curTodo in todoList">
+                                <li v-for="curTodo in todoList" :class="{'textline' : curTodo.done}" >
                                     <!-- <span class="cerchio">&check;</span>  -->
                                     <span>{{curTodo.text }}</span>
                                     <!-- <span class="tag decorazione-e">Editorial</span> -->
