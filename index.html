@@ -39,6 +39,7 @@
                             <ul>
                                 <li v-for="(curTodo, index) in todoList" :class="{'textline' : curTodo.done}" @click="inverDone(index)">
                                     <!-- <span class="cerchio">&check;</span>  -->
+                                    <span class="cross"@click="removeTodo(index)">&Cross;</span>
                                     <span>{{curTodo.text }}</span>
                                     <!-- <span class="tag decorazione-e">Editorial</span> -->
                                 </li>

@@ -59,8 +59,9 @@ methods: {
 
                 console.log(index);
                 this.todoList[index].done = !this.todoList[index].done;
-            
-            }       
-    
+            },       
+            removeTodo: function (index) {
+                this.todoList.splice(index, 1)
+            }
 }
   }).mount("#app")
