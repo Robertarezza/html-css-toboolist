@@ -27,7 +27,8 @@
             <div class="contenitore">
                 <!-- barra di ricerca -->
                 <div>
-                    <input class="barra" type="text" v-model="newTodo.text" @keypress.enter="addTodo" placeholder="es: Fare la spesa..." >
+                    <input class="barra" type="text" v-model="newTodo.text" @keypress.enter="addTodo"
+                        placeholder="es: Fare la spesa...">
                     <button class="bottone" @click="addTodo">Aggiungi</button>
                 </div>
                 <hr>
@@ -37,10 +38,11 @@
                         <li>
                             <!-- <h4>&#10148; TASK PRECEDENTI</h4> -->
                             <ul>
-                                <li v-for="(curTodo, index) in todoList" :class="{'textline' : curTodo.done}" @click="inverDone(index)">
+                                <li v-for="(curTodo, index) in todoList" 
+                                   >
                                     <!-- <span class="cerchio">&check;</span>  -->
-                                    <span class="cross"@click="removeTodo(index)">&Cross;</span>
-                                    <span>{{curTodo.text }}</span>
+                                    <span  @click="inverDone(index)" :class="{'textline' : curTodo.done}">{{curTodo.text }}</span>
+                                    <span class="cross" @click="removeTodo(index)">&Cross;</span>
                                     <!-- <span class="tag decorazione-e">Editorial</span> -->
                                 </li>
                                 <!-- <li>

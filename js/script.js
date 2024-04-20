@@ -5,7 +5,7 @@ data() {
      return {
         newTodo: {
             text:"",
-            done:"",
+            done: false,
         },
 todoList: [
      {
@@ -52,16 +52,18 @@ methods: {
       
             this.todoList.push({...this.newTodo})
             this.newTodo.text="",
-            this.newTodo.done="";
+            this.newTodo.done= false;
           
             },
             inverDone: function(index) {
-
                 console.log(index);
                 this.todoList[index].done = !this.todoList[index].done;
+             //console.log(this.todoList[index].done);
             },       
             removeTodo: function (index) {
-                this.todoList.splice(index, 1)
-            }
+                this.todoList.splice(index, 0);
+                this.newTodo = { text: "", done: false };
+                console.log(this.newTodo,  this.todoList.splice(index, 1));
+            },
 }
   }).mount("#app")

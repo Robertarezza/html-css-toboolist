@@ -55,9 +55,24 @@ ol,ul{
     margin-left: 20px;
     list-style-type: none;
 }
-.textline{
-    text-decoration: line-through;
+
+.textline {
+    position: relative; 
 }
+
+.textline::before {
+    content: "✔";
+    color: green;
+    font-size: 20px;
+    position: absolute; 
+    left: -25px; 
+    bottom: 1px;
+}
+
+.textline {
+    text-decoration: line-through; /* Barratura del testo */
+}
+
 
 ol>li{
     margin-bottom: 15px;
@@ -72,7 +87,9 @@ ul>li{
     width: 95%;
     border: 3px solid white;
     margin-bottom: 10px;
-    padding: 7px 0;
+    padding: 3px 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -123,6 +140,7 @@ ul>li{
 }
 
 .cross{
-    color: red;
-    border: 2px solid red;  
+    color: gray;
+    cursor: pointer;
+    /* border: 2px solid red;   */
 }
