@@ -49,11 +49,12 @@ todoList: [
 methods: {
     addTodo: function() {
         console.log("addTodo");
+        if (this.newTodo.text.trim() !== "") {
       
             this.todoList.push({...this.newTodo})
             this.newTodo.text="",
             this.newTodo.done= false;
-          
+        }
             },
             inverDone: function(index) {
                 console.log(index);
