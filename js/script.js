@@ -3,6 +3,7 @@ const {createApp} = Vue;
 createApp ( {
 data() {
      return {
+        
         newTodo: {
             text:"",
             done: false,
@@ -41,6 +42,7 @@ todoList: [
         done: true,
     },
 ]
+
     }
  },
  created() {
@@ -48,22 +50,22 @@ todoList: [
    },
 methods: {
     addTodo: function() {
-        console.log("addTodo");
-        if (this.newTodo.text.trim() !== "") {
-      
+        console.log("addTodo"); 
+        if (this.newTodo.text !== "") {
+            
             this.todoList.push({...this.newTodo})
             this.newTodo.text="",
             this.newTodo.done= false;
         }
-            },
-            inverDone: function(index) {
-                console.log(index);
-                this.todoList[index].done = !this.todoList[index].done;
+        },
+    inverDone: function(index) {
+            console.log(index);
+            this.todoList[index].done = !this.todoList[index].done;
              //console.log(this.todoList[index].done);
             },       
-            removeTodo: function (index) {
-                this.todoList.splice(index, 0);
-                this.newTodo = { text: "", done: false };
+    removeTodo: function (index) {
+            this.todoList.splice(index, 0);
+            this.newTodo = { text: "", done: false };
                 console.log(this.newTodo,  this.todoList.splice(index, 1));
             },
 }

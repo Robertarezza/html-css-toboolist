@@ -72,7 +72,9 @@ ol,ul{
 .textline {
     text-decoration: line-through; /* Barratura del testo */
 }
-
+.top .error {
+    color: red;
+}
 
 ol>li{
     margin-bottom: 15px;

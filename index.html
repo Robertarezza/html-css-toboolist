@@ -27,10 +27,12 @@
             <div class="contenitore">
                 <!-- barra di ricerca -->
                 <div>
-                    <input class="barra" type="text" v-model="newTodo.text" @keypress.enter="addTodo"
+                    <!-- //trim toglie gli spazi all'inizio e alla fine -->
+                    <input class="barra" type="text" v-model.trim="newTodo.text" @keyup.enter="addTodo"
                         placeholder="es: Fare la spesa...">
                     <button class="bottone" @click="addTodo">Aggiungi</button>
                 </div>
+                
                 <hr>
                 <!-- inserimento lista -->
                 <div>
@@ -38,66 +40,16 @@
                         <li>
                             <!-- <h4>&#10148; TASK PRECEDENTI</h4> -->
                             <ul>
-                                <li v-for="(curTodo, index) in todoList" 
-                                   >
+                                <li v-for="(curTodo, index) in todoList">
                                     <!-- <span class="cerchio">&check;</span>  -->
-                                    <span  @click="inverDone(index)" :class="{'textline' : curTodo.done}">{{curTodo.text }}</span>
+                                    <span @click="inverDone(index)" :class="{'textline' : curTodo.done}">{{curTodo.text}}</span>
                                     <span class="cross" @click="removeTodo(index)">&Cross;</span>
                                     <!-- <span class="tag decorazione-e">Editorial</span> -->
                                 </li>
-                                <!-- <li>
-                                    <span class="cerchio">&check;</span>
-                                    <span class="textline"> Recriuting blog post</span>
-                                    <span class="tag decorazione-e">Editorial</span>
-                                </li>
-                                <li>
-                                    <span class="cerchio">&check;</span>
-                                    <span class="textline">Mobile app luaunch</span>
-                                    <span class="tag q1">Q1 Goals</span>
-                                </li>
-                                <li>
-                                    <span class="cross">&Cross;</span>
-                                    <span>Interview Jhon H.</span> 
-                                    <span class="tag rec">Recruting</span>
-                                </li>
-                                <li>
-                                    <span class="cerchio">&check;</span>
-                                    <span class="textline"> Summit update to mobile storefronts</span>
-                                    <spAan class="tag mobile">Mobile</span>
-                                </li>
-                                <li>
-                                    <span class="cross">&Cross;</span> 
-                                    <span>Shedule meeting with Alex</span>
-                                </li>
-                                <li>
-                                    <span class="cerchio">&check;</span>
-                                    <span class="textline">Homepage refresh </span>
-                                    <span class="tag web">Website</span>
-                                </li>
-                                <li>
-                                    <span class="cerchio">&check;</span>
-                                    <span class="textline">Onboard new Sales team members</span>
-                                    <span class="tag sales">Sales</span>
-                                </li>
-                                <li>
-                                    <span class="cerchio">&check;</span>
-                                    <span class="textline">Review editorial calendar </span>
-                                    <span class="tag decorazione-e">Editorial</span>
-                                </li> -->
+
                             </ul>
                         </li>
-                        <!-- <li> -->
-                        <!-- <h4>&#10148; OGGI </h4> -->
-                        <!-- <ul>
-                                
-                            </ul>
-                        </li>
-                        <li> -->
-                        <!-- <h4>&#10148; PROSSIMI GIORNI</h4> -->
-                        <!-- <ul>
-                               
-                            </ul>
-                        </li> -->
+
                     </ol>
                 </div>
 
